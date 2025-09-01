@@ -6,7 +6,7 @@ describe "the day_trader method" do
   end
 
   it "should return nil if prices always go down" do
-    expect(day_trader([10, 9, 8, 7, 6, 5, 4])).to eq([0, 1])
+    expect(day_trader([10, 9, 8, 7, 6, 5, 4])).to eq(nil)
   end
 
   it "should return [0, 1] for [1, 2]" do

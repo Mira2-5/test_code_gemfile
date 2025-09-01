@@ -9,7 +9,7 @@ def word_counter(corpus, dictionary)
   result = Hash.new(0)
 
   dictionary.each do |word|
-    # Pour chaque mot du dictionnaire, on compte le nombre de fois qu’il apparaît
+    # Pour chaque mot du dictionnaire, on compte le nombre de fois qu’il apparaît et aussi combien de fois il est inclus dans les mots du corpus 
     count = words.count { |w| w.include?(word.downcase) }
     result[word] = count if count > 0
   end
